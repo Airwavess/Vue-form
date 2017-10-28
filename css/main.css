@@ -1,0 +1,86 @@
+[v-cloak] {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#app {
+    height: 100%;
+}
+
+.login-form {
+    box-shadow: 0 0 17px rgba(0, 0, 0, .24);
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group div:first-child {
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 15px;
+    color: #3498DB;
+}
+
+.form-group input {
+    outline: none;
+    padding: 10px 0px 10px 40px;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    transition: .5s border-color;
+    width: 300px;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.inner-padding {
+    padding: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-white {
+    background: white;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.text-gray {
+    color: #777;
+}
+
+.btn-submit {
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #2980B9;
+}

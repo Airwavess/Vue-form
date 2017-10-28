@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="flex-center full-height">
+            <div class="login-form inner-padding bg-white">
+                <form v-on:submit.prevent="onSubmit">
+                    <h1 class="text-center text-gray">Login</h1>
+                    <div class="form-group">
+                        <my-label>
+                            <i class="fa fa-user"></i>
+                        </my-label>
+                        <my-input input_type="text" input_placeholder="帳號" pattern="[0-9]{4,10}">
+                            <span class=" text-danger">長度限4~12碼數字</span>
+                        </my-input>
+                    </div>
+                    <div class="form-group">
+                        <my-label>
+                            <i class="fa fa-lock"></i>
+                        </my-label>
+                        <my-input input_type="password" input_placeholder="密碼" pattern="[a-z]{4,10}">
+                            <span class=" text-danger">長度限4~12碼英文</span>
+                        </my-input>
+                    </div>
+                    <my-button button_type="submit">登入</my-button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/8c21a5f0d8.js"></script>
+    <!-- Vue js  -->
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Custom js -->
+    <script src="js/input.js"></script>
+    <script src="js/label.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
