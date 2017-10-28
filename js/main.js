@@ -4,6 +4,11 @@ new Vue({
         isSubmitAllowed: true
     },
     methods: {
+        /**
+         * After the user click the submit button, check whether the all the
+         * value that user input is valid. If any value is invalid or empty, 
+         * it shows the error message under input line. 
+         */
         validate() {
             this.isSubmitAllowed = true
 
@@ -18,6 +23,9 @@ new Vue({
                 }
             })
         },
+        /**
+         * Prevent event, if the submit is not allowed, otherwsie, output 'OK' in console. 
+         */
         onSubmit() {
             this.validate()
             if (!this.isSubmitAllowed) {

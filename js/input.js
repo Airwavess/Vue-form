@@ -13,28 +13,18 @@ Vue.component('my-input', {
         return {
             user_input: '',
             invalid: false,
-            press: false
-        }
-    },
-    mounted() {
-    },
-    computed: {
-        show() {
-            var re = new RegExp("^" + this.pattern + "$");
-            return this.invalid + " " + re.test(this.user_input)
-        },
-        has_press() {
-            if (this.user_input.length > 0) {
-                this.press = true
-            }
-            return this.press
         }
     },
     watch: {
+        /**
+         * Using regex to confirm whether the value that the 
+         * use input match the pattern.
+         * @param {String} val the value of user input
+         */
         user_input(val) {
             var re = new RegExp("^" + this.pattern + "$");
-            if (this.user_input.length > 0) {
-                this.invalid = !re.test(this.user_input)
+            if (val.length > 0) {
+                this.invalid = !re.test(val)
             } else {
                 this.invalid = false
             }

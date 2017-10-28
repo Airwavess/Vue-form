@@ -5,9 +5,4 @@ Vue.component('my-button', {
         </button>
     `,
     props: ['button_type'],
-    data() {
-        return {
-
-        }
-    }
 })
